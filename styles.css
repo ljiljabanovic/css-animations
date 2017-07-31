@@ -1,44 +1,37 @@
-.clearfix:after {
-    display: block;
-    content: "";
-    clear: both;
-}
- 
-section h3,p {
-    color: white;
-    text-align: center;
-}
-section div {
-    width: 32%;
-    float: left;
-    padding-top: 150px;
-}
-section div#prvi {
-    padding-top: 150px;
-    background: url(media/camera.svg) no-repeat center top;
-    background-color: orange;
-    background-size: 50%;
+div#prvi {
+    width: 200px;
+    height: 200px;
+    border: 10px solid red;
     
 }
-section div#drugi {
-    padding-top: 150px;
-    background: url(media/phone.svg) no-repeat center top;
-    background-color: green;
-    background-size: 50%;
-}
-section div#treci {
-    padding-top: 150px;
-    background: url(media/doves.svg) no-repeat center top;
-    background-color: blue;
-    background-size: 50%;
+
+div#drugi{
+    width: 30px;
+    height: 30px;
+    background: yellow;
+    transition: linear 1s;
 }
 
-@media screen and (max-width: 800px) {
-   section div {
-    width: 90%;
-    float: none;
-    padding-top: 150px;
-    position: relative;
-    left: 5%;
+div#prvi:hover div#drugi{
+    transform: translateY(170px);
 }
+div#treci {
+    position: relative;
+    top: 100px;
+    left: 0;
+    width:  50px;
+    height: 50px;
+    background: red;
+    animation: animacija linear 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes animacija {
+    0% {
+        background: red;
+        left: 0;
+    }
+    100% {
+        background: yellow;
+        left: 200px;
+    }
 }
