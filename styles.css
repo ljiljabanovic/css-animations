@@ -1,0 +1,44 @@
+.clearfix:after {
+    display: block;
+    content: "";
+    clear: both;
+}
+ 
+section h3,p {
+    color: white;
+    text-align: center;
+}
+section div {
+    width: 32%;
+    float: left;
+    padding-top: 150px;
+}
+section div#prvi {
+    padding-top: 150px;
+    background: url(media/camera.svg) no-repeat center top;
+    background-color: orange;
+    background-size: 50%;
+    
+}
+section div#drugi {
+    padding-top: 150px;
+    background: url(media/phone.svg) no-repeat center top;
+    background-color: green;
+    background-size: 50%;
+}
+section div#treci {
+    padding-top: 150px;
+    background: url(media/doves.svg) no-repeat center top;
+    background-color: blue;
+    background-size: 50%;
+}
+
+@media screen and (max-width: 800px) {
+   section div {
+    width: 90%;
+    float: none;
+    padding-top: 150px;
+    position: relative;
+    left: 5%;
+}
+}
